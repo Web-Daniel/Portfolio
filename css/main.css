@@ -4,6 +4,9 @@ body {
   background-color: #f5f5f5;
 }
 
+div.main {
+  max-width: 1140px;
+}
 div.main div.pageBox div.headlineBox {
   margin-top: 35px;
   margin-bottom: 35px;
@@ -40,6 +43,10 @@ div.main div.pageBox div.projectsBox div.row div.cardBox div.card {
 div.main div.pageBox div.projectsBox div.row div.cardBox div.card:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 div.main div#contactsBox {
   margin-bottom: 5px;
