@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+div.main div.pageBox div.headlineBox {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+div.main div.pageBox div.aboutMi {
+  padding: 0;
+}
+div.main div.pageBox div.aboutMi ul li {
+  margin-bottom: 5px;
+}
+div.main div.pageBox div.aboutMi div.importantInfo {
+  background-color: #e5e5e5;
+  padding: 0 10px;
+}
+div.main div.pageBox div.projectsBox div.row {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding-top: 5px;
+}
+div.main div.pageBox div.projectsBox div.row div.cardBox {
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card {
+  width: 100%;
+}
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+div.main div#contactsBox {
+  margin-bottom: 5px;
+}
+div.main div#contactsBox p {
+  margin-bottom: 0;
+}
+div.main footer#footerOnPage {
+  text-align: center;
+  background-color: #7d7d7d;
+}
+div.main footer#footerOnPage p {
+  margin-bottom: 0;
+  color: #ffffff;
+}
