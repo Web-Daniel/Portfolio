@@ -14,12 +14,6 @@ div.main div.pageBox div.headlineBox {
 div.main div.pageBox div.headlineBox h1#headline {
   text-align: center;
 }
-div.main div.pageBox div.headlineBox div#headBox div#linkBox p {
-  display: inline-block;
-}
-div.main div.pageBox div.headlineBox div#headBox div#linkBox div.link {
-  display: inline-block;
-}
 div.main div.pageBox div.aboutMi {
   padding: 0;
 }
