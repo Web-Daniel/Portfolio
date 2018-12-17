@@ -10,7 +10,15 @@ div.main {
 div.main div.pageBox div.headlineBox {
   margin-top: 35px;
   margin-bottom: 35px;
+}
+div.main div.pageBox div.headlineBox h1#headline {
   text-align: center;
+}
+div.main div.pageBox div.headlineBox div#headBox div#linkBox p {
+  display: inline-block;
+}
+div.main div.pageBox div.headlineBox div#headBox div#linkBox div.link {
+  display: inline-block;
 }
 div.main div.pageBox div.aboutMi {
   padding: 0;
