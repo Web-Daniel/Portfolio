@@ -1,33 +1,49 @@
+@import resources
 @import colors
 
 body
     padding: 0
     margin: 0
     background-color: #f5f5f5
+    font-family: 'Neucha', cursive
+    letter-spacing: 1px
 
 div.main
     max-width: 1140px
     div.pageBox
         div.headlineBox
+            background-color: #bcd1d0
             margin-top: 35px
             margin-bottom: 35px
             h1#headline
                 text-align: center
+                text-shadow: 1px 1px #ffffff
         div.aboutMi
             padding: 0
+            background-color: #ffffff
+            padding: 6px
             ul
                 li
                     margin-bottom: 5px
             div.importantInfo
-                background-color: #e5e5e5
-                padding: 0 10px
-                border-left: 2px solid #52d372
+                a.btnCollapse
+                    margin-left: 10px
+                    text-decoration: none
+                    color: #000000
+                    &:hover
+                        color: #ffffff
+                        text-shadow: 1px 1px 2px black, 0 0 4px #000000
+                div.importantInfoBox
+                    background-color: #f0f0f0
+                    padding: 0 10px
+                    border-left: 2px solid #52d372
         div.projectsBox
-            h4
+            background-color: #bcd1d0
+            padding: 6px
+            h3
                 text-align: center
+                text-shadow: 1px 1px #ffffff
             div.row
-                border: 1px solid #d4d4d4
-                border-radius: 4px
                 padding-top: 5px
                 div.cardBox
                     padding: 0
@@ -36,12 +52,26 @@ div.main
                     margin-right: 10px
                     div.card
                         width: 100%
+                        transition: .2s
+                        border: none
                         &:hover
                             box-shadow: 0 0 10px rgba(0,0,0,0.5)
                         img
                             flex-shrink: 0
+                        div.card-body
+                            a
+                                display: block
+                                background-color: #53b4d9
+                                border: none
+                                transition: .2s
+                                &:active, &:focus
+                                    box-shadow: none
+                                &:hover
+                                    box-shadow: 2px 3px rgba(0,0,0,0.5)
+                                    transform: translate(-2px, -3px)
     div#contactsBox
-        margin-bottom: 5px
+        background-color: #ffffff
+        padding: 10px 6px 10px 6px
         p
             margin-bottom: 0
     footer#footerOnPage
@@ -50,5 +80,3 @@ div.main
         p
             margin-bottom: 0
             color: #ffffff
-            
-                

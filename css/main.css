@@ -1,36 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Neucha");
+.row {
+  margin: 0;
+}
+
+.pMy {
+  margin: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #f5f5f5;
+  font-family: "Neucha", cursive;
+  letter-spacing: 1px;
 }
 
 div.main {
   max-width: 1140px;
 }
 div.main div.pageBox div.headlineBox {
+  background-color: #bcd1d0;
   margin-top: 35px;
   margin-bottom: 35px;
 }
 div.main div.pageBox div.headlineBox h1#headline {
   text-align: center;
+  text-shadow: 1px 1px #ffffff;
 }
 div.main div.pageBox div.aboutMi {
   padding: 0;
+  background-color: #ffffff;
+  padding: 6px;
 }
 div.main div.pageBox div.aboutMi ul li {
   margin-bottom: 5px;
 }
-div.main div.pageBox div.aboutMi div.importantInfo {
-  background-color: #e5e5e5;
+div.main div.pageBox div.aboutMi div.importantInfo a.btnCollapse {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+div.main div.pageBox div.aboutMi div.importantInfo a.btnCollapse:hover {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black, 0 0 4px #000000;
+}
+div.main div.pageBox div.aboutMi div.importantInfo div.importantInfoBox {
+  background-color: #f0f0f0;
   padding: 0 10px;
   border-left: 2px solid #52d372;
 }
-div.main div.pageBox div.projectsBox h4 {
+div.main div.pageBox div.projectsBox {
+  background-color: #bcd1d0;
+  padding: 6px;
+}
+div.main div.pageBox div.projectsBox h3 {
   text-align: center;
+  text-shadow: 1px 1px #ffffff;
 }
 div.main div.pageBox div.projectsBox div.row {
-  border: 1px solid #d4d4d4;
-  border-radius: 4px;
   padding-top: 5px;
 }
 div.main div.pageBox div.projectsBox div.row div.cardBox {
@@ -41,6 +70,9 @@ div.main div.pageBox div.projectsBox div.row div.cardBox {
 }
 div.main div.pageBox div.projectsBox div.row div.cardBox div.card {
   width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: none;
 }
 div.main div.pageBox div.projectsBox div.row div.cardBox div.card:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -50,8 +82,26 @@ div.main div.pageBox div.projectsBox div.row div.cardBox div.card img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card div.card-body a {
+  display: block;
+  background-color: #53b4d9;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card div.card-body a:active, div.main div.pageBox div.projectsBox div.row div.cardBox div.card div.card-body a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card div.card-body a:hover {
+  -webkit-box-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-2px, -3px);
+          transform: translate(-2px, -3px);
+}
 div.main div#contactsBox {
-  margin-bottom: 5px;
+  background-color: #ffffff;
+  padding: 10px 6px 10px 6px;
 }
 div.main div#contactsBox p {
   margin-bottom: 0;
