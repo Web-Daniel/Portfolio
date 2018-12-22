@@ -21,7 +21,7 @@ div.main {
   max-width: 1140px;
 }
 div.main div.pageBox div.headlineBox {
-  background-color: #bcd1d0;
+  background-color: #c4d4d4;
   margin-top: 35px;
   margin-bottom: 35px;
 }
@@ -34,15 +34,24 @@ div.main div.pageBox div.aboutMi {
   background-color: #ffffff;
   padding: 6px;
 }
+div.main div.pageBox div.aboutMi ul {
+  -webkit-padding-start: 14px;
+     -moz-padding-start: 14px;
+          padding-inline-start: 14px;
+}
 div.main div.pageBox div.aboutMi ul li {
-  display: inline;
+  display: inline-block;
   margin-bottom: 5px;
 }
 div.main div.pageBox div.aboutMi ul li mark {
   width: 100px;
 }
+div.main div.pageBox div.aboutMi ul li mark:hover {
+  -webkit-box-shadow: 1px 1px #000000;
+          box-shadow: 1px 1px #000000;
+}
 div.main div.pageBox div.aboutMi div.importantInfo a.btnCollapse {
-  margin-left: 10px;
+  margin-left: 8px;
   text-decoration: none;
   color: #000000;
 }
@@ -56,7 +65,7 @@ div.main div.pageBox div.aboutMi div.importantInfo div.importantInfoBox {
   border-left: 2px solid #52d372;
 }
 div.main div.pageBox div.projectsBox {
-  background-color: #bcd1d0;
+  background-color: #c4d4d4;
   padding: 6px;
 }
 div.main div.pageBox div.projectsBox h3 {
@@ -112,11 +121,15 @@ div.main div#contactsBox {
   padding: 10px 6px 10px 6px;
 }
 div.main div#contactsBox p {
+  margin-left: 6px;
   margin-bottom: 0;
+}
+div.main div#contactsBox a {
+  margin-left: 6px;
 }
 div.main footer#footerOnPage {
   text-align: center;
-  background-color: #7d7d7d;
+  background-color: #9d9d9d;
 }
 div.main footer#footerOnPage p {
   margin-bottom: 0;

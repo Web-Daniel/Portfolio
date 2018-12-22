@@ -12,7 +12,7 @@ div.main
     max-width: 1140px
     div.pageBox
         div.headlineBox
-            background-color: #bcd1d0
+            background-color: #c4d4d4
             margin-top: 35px
             margin-bottom: 35px
             h1#headline
@@ -23,14 +23,17 @@ div.main
             background-color: #ffffff
             padding: 6px
             ul
+                padding-inline-start: 14px
                 li
-                    display: inline
+                    display: inline-block
                     margin-bottom: 5px
                     mark
                         width: 100px
+                        &:hover
+                            box-shadow: 1px 1px #000000
             div.importantInfo
                 a.btnCollapse
-                    margin-left: 10px
+                    margin-left: 8px
                     text-decoration: none
                     color: #000000
                     &:hover
@@ -41,7 +44,7 @@ div.main
                     padding: 0 10px
                     border-left: 2px solid #52d372
         div.projectsBox
-            background-color: #bcd1d0
+            background-color: #c4d4d4
             padding: 6px
             h3
                 text-align: center
@@ -79,10 +82,13 @@ div.main
         background-color: #ffffff
         padding: 10px 6px 10px 6px
         p
+            margin-left: 6px
             margin-bottom: 0
+        a
+            margin-left: 6px
     footer#footerOnPage
         text-align: center
-        background-color: #7d7d7d
+        background-color: #9d9d9d
         p
             margin-bottom: 0
             color: #ffffff
