@@ -125,6 +125,10 @@ div.main div#contactsBox p {
   margin-left: 6px;
   margin-bottom: 0;
 }
+div.main div#contactsBox p u#emailString {
+  font-size: 18px;
+  font-weight: 700;
+}
 div.main div#contactsBox a {
   margin-left: 6px;
 }
