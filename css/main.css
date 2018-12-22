@@ -82,6 +82,9 @@ div.main div.pageBox div.projectsBox div.row div.cardBox div.card img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+div.main div.pageBox div.projectsBox div.row div.cardBox div.card div.card-body h5 {
+  text-decoration: underline;
+}
 div.main div.pageBox div.projectsBox div.row div.cardBox div.card div.card-body a {
   display: block;
   background-color: #53b4d9;
