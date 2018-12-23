@@ -1,8 +1,8 @@
 $('#btnCollapse').click(function () {
     if (($('#collapseExample')).hasClass('show') == false) {
-        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(свернуть) <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>';
+        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(свернуть)';
     } else {
-        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(развернуть) <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>';
+        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(развернуть)';
     }
 });
 
