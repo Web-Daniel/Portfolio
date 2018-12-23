@@ -1,8 +1,8 @@
 $('#btnCollapse').click(function () {
     if (($('#collapseExample')).hasClass('show') == false) {
-        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(свернуть)';
+        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(свернуть) <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>';
     } else {
-        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(развернуть)';
+        document.getElementById('btnCollapse').innerHTML = 'Дополнительно...(развернуть) <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>';
     }
 });
 
@@ -22,7 +22,7 @@ var setBackgrounds = function() {
 setInterval(setBackgrounds, 1000); */
 
 var setColors = setInterval(function() {
-    setInterval(window.document.getElementById('emailString').style.color = colors[i], 1000);
+    setInterval((document.getElementById('emailString').style.color = colors[i]), 1000);
     if (i >= colors.length) {
         return i = 0;
     } else {
@@ -34,7 +34,7 @@ setTimeout(function(){
 }, 58000);
 
 var setBackgrounds = setInterval(function() {
-    setInterval(window.document.getElementById('emailString').style.background = backgrounds[j], 1000);
+    setInterval((document.getElementById('emailString').style.background = backgrounds[j]), 1000);
     if (j >= backgrounds.length) {
         return j = 0;
     } else {
