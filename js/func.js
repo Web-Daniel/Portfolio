@@ -16,7 +16,7 @@ var setColors = setTimeout(function tick() {
         document.getElementById('emailString').style.color = colors[i];
         document.getElementById('emailString').style.background = backgrounds[i];
         timerId = setTimeout(tick, 1000);
-      }, 1000);
+    }, 1000);
     if (i >= colors.length) {
         setColors = setTimeout(tick, 1000);
         return i = 0;
