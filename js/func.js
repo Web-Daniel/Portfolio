@@ -27,7 +27,7 @@ var setColors = setTimeout(function tick() {
 }, 1000);
 
 
-
+/*not fine*/
 /*
 var setColors = setInterval(function() {
     setInterval((document.getElementById('emailString').style.color = colors[i]), 1000);
