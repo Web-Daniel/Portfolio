@@ -11,6 +11,23 @@ var backgrounds = ['#00CC00','#1047A9','#7109AA','#A00000','#FF7400','#FF9C0C','
 var i = -1;
 var timerId;
 
+var setColors = setTimeout(function tick() {
+    timerId = setTimeout(function tick() {
+        document.getElementById('emailString').style.color = colors[i];
+        document.getElementById('emailString').style.background = backgrounds[i];
+        timerId = setTimeout(tick, 1000);
+      }, 1000);
+    if (i >= colors.length) {
+        setColors = setTimeout(tick, 1000);
+        return i = 0;
+    } else {
+        setColors = setTimeout(tick, 1000);
+        return i++;
+    };
+}, 1000);
+
+
+
 /*
 var setColors = setInterval(function() {
     setInterval((document.getElementById('emailString').style.color = colors[i]), 1000);
@@ -35,19 +52,3 @@ var setBackgrounds = setInterval(function() {
 setTimeout(function(){
     clearInterval(setBackgrounds);
 }, 58000); */
-
-
-var setColors = setTimeout(function tick() {
-    timerId = setTimeout(function tick() {
-        document.getElementById('emailString').style.color = colors[i];
-        document.getElementById('emailString').style.background = backgrounds[i];
-        timerId = setTimeout(tick, 1000);
-      }, 1000);
-    if (i >= colors.length) {
-        setColors = setTimeout(tick, 1000);
-        return i = 0;
-    } else {
-        setColors = setTimeout(tick, 1000);
-        return i++;
-    };
-}, 1000);
